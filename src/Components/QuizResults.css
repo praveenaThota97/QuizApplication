@@ -1,0 +1,87 @@
+/* Container Styling */
+.results-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    color: rgb(0, 0, 0);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Score Highlight */
+.scoreSection{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.score {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #3f7ae0;
+    animation: pop 1s ease-in-out infinite alternate;
+}
+
+@keyframes pop {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+/* Celebration Message */
+.celebration .message {
+    animation: fadeIn 2s ease;
+}
+
+.celebration h2 {
+    font-size: 2rem;
+    color: #dd6418;
+    animation: pop 2s ease forwards;
+}
+
+@keyframes pop{
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.celebration p {
+    color: #29b6da;
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+
+/* Encouragement Message */
+.encouragement h2 {
+    color: #ff5050;
+    font-size: 1.8rem;
+    animation: shake 1s ease-in-out infinite alternate;
+}
+
+@keyframes shake {
+    from {
+        transform: rotate(-3deg);
+    }
+    to {
+        transform: rotate(3deg);
+    }
+}
+
+.encouragement p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
